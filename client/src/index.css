@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ── Map marker glow pulse ── */
+@keyframes marker-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 4px rgba(255, 107, 0, 0.6));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px rgba(255, 107, 0, 0.9));
+    }
+}
+
+@keyframes marker-pulse {
+    0% {
+        r: 5;
+        opacity: 0.3;
+    }
+
+    100% {
+        r: 14;
+        opacity: 0;
+    }
+}
+
+.animate-marker-glow {
+    animation: marker-glow 2s ease-in-out infinite;
+}
+
+.animate-marker-pulse {
+    animation: marker-pulse 1.5s ease-out infinite;
+}
+
+@keyframes logo-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-logo-marquee {
+    animation: logo-marquee 25s linear infinite;
+}
