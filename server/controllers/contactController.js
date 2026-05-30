@@ -1,47 +1,16 @@
-import dns from "dns";
-dns.setDefaultResultOrder("ipv4first");
+import transporter from "../config/emailConfig.js";
 
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
-import nodemailer from "nodemailer";
-
-dotenv.config();
-
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-// ── Create SMTP transporter AFTER dotenv is loaded ──
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-    },
-});
-
-// Verify SMTP connection
-transporter.verify((err) => {
-    if (err) {
-        console.error("❌ SMTP connection failed:", err.message);
-    } else {
-        console.log("✅ SMTP ready — emails will be sent from", process.env.SMTP_USER);
-    }
-});
-
-// Make transporter available to routes
-app.set("transporter", transporter);
-
-app.get("/", (req, res) => {
-    res.send("API Running");
-});
-
-// ── Contact Route (inline to use transporter) ──
-app.post("/api/contact", async (req, res) => {
+/**
+ * POST /api/contact
+ * Sends two emails:
+ *   1. Admin notification — full form details to ADMIN_EMAIL
+ *   2. User confirmation — thank-you email to the submitter
+ */
+export const submitContact = async (req, res) => {
     try {
         const { name, email, phone, company, service, message } = req.body;
 
+        // ── Basic validation ──
         if (!name || !email || !message) {
             return res.status(400).json({
                 success: false,
@@ -123,16 +92,19 @@ app.post("/api/contact", async (req, res) => {
     </div>
     <div class="body">
       <h2>Thank you, ${name}!</h2>
-      <p>We've received your message and our team will get back to you within 24 hours. Here's a summary of what you sent us:</p>
+      <p>We've received your message and our team will get back to you within 24 hours. In the meantime, here's a summary of what you sent us:</p>
       <div class="summary">
         ${service ? `<div class="row"><span class="label">Service</span><span class="val">${service}</span></div>` : ""}
         <div class="row"><span class="label">Message</span><span class="val">${message.length > 80 ? message.substring(0, 80) + "…" : message}</span></div>
       </div>
       <p>If you need immediate assistance, feel free to give us a call or reply directly to this email.</p>
+      <p style="text-align:center; margin-top: 24px;">
+        <a href="https://itslogistics.com" class="cta">Visit Our Website →</a>
+      </p>
     </div>
     <div class="footer">
       © ${new Date().getFullYear()} ITS Logistics — An ECHO Company<br>
-      This is an automated confirmation.
+      This is an automated confirmation. Please do not reply to this email.
     </div>
   </div>
 </body>
@@ -162,10 +134,4 @@ app.post("/api/contact", async (req, res) => {
             error: "Failed to send email. Please try again later.",
         });
     }
-});
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-    console.log(`Server running on ${PORT}`);
-});
+};

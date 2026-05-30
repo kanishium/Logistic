@@ -1,9 +1,17 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+html,
+body,
+#root {
+    overflow-x: hidden;
+}
 
 /* ── Map marker glow pulse ── */
 @keyframes marker-glow {
-    0%, 100% {
+
+    0%,
+    100% {
         filter: drop-shadow(0 0 4px rgba(255, 107, 0, 0.6));
     }
 
