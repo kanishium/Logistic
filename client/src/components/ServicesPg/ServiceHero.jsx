@@ -1,5 +1,6 @@
 import React from "react";
-import HeroSectionvideo from "../../assets/HeroSectionvideo.mp4";
+// Video served from public/ folder — not bundled by Vite
+const HeroSectionvideo = '/HeroSectionvideo.mp4';
 
 const ServiceHero = () => {
     return (

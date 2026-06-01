@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import heroVideo from '../../assets/HeroSectionvideo.mp4';
+// Video served from public/ folder — not bundled by Vite
+const heroVideo = '/HeroSectionvideo.mp4';
 
 /* ─── Service items for the bottom selector ─── */
 const services = [
