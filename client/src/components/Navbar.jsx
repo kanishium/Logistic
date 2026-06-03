@@ -16,7 +16,7 @@ const topBarLinks = [
   { label: 'Media Requests', to: '/media' },
 ];
 
-const TOP_BAR_HEIGHT = 40; // px
+const TOP_BAR_HEIGHT = 37; // px
 const MAIN_NAV_HEIGHT = 72; // px
 
 const Navbar = () => {

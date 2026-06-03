@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import React from "react";
 
 const reviews = [
     {
         quote:
-            "We're offering more than just jobs. We're offering career opportunities that people can build their lives around. That takes investment and a real commitment to fostering a culture that starts and ends with the people that work here.",
+            "We're offering more than just jobs. We're offering career opportunities that people can build their lives around.",
         name: "Manny McElroy",
         role: "President, Transportation - South Center",
         image:
@@ -12,7 +11,7 @@ const reviews = [
     },
     {
         quote:
-            "Great teams are built when people feel trusted, supported, and challenged to grow. Our goal is to create an environment where every team member can do the best work of their career.",
+            "Great teams are built when people feel trusted, supported, and challenged to grow.",
         name: "Sarah Mitchell",
         role: "Chief People Officer",
         image:
@@ -20,7 +19,7 @@ const reviews = [
     },
     {
         quote:
-            "Operational excellence starts with people who care deeply about the work, the customer, and each other. That mindset is what keeps our organization moving forward.",
+            "Operational excellence starts with people who care deeply about the work, the customer, and each other.",
         name: "David Carter",
         role: "Vice President, Operations",
         image:
@@ -28,7 +27,7 @@ const reviews = [
     },
     {
         quote:
-            "Our leadership philosophy is simple: remove barriers, create opportunity, and help people win. When our teams succeed, our customers feel that success too.",
+            "Our leadership philosophy is simple: remove barriers, create opportunity, and help people win.",
         name: "Angela Brooks",
         role: "Senior Director, Logistics",
         image:
@@ -36,7 +35,7 @@ const reviews = [
     },
     {
         quote:
-            "We believe culture is not a slogan. It is how we communicate, how we solve problems, and how we show up for one another every single day.",
+            "We believe culture is not a slogan. It is how we communicate, solve problems, and show up every day.",
         name: "Robert Hayes",
         role: "Executive Director, Carrier Relations",
         image:
@@ -44,7 +43,7 @@ const reviews = [
     },
     {
         quote:
-            "The best organizations create space for ambition. We want our people to see a future here and know they have the support to reach it.",
+            "The best organizations create space for ambition and help people see a future they can grow into.",
         name: "Emily Johnson",
         role: "Director, Talent Development",
         image:
@@ -53,69 +52,55 @@ const reviews = [
 ];
 
 const HeadReviews = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const nextReview = () => {
-        setActiveIndex((prev) => (prev + 1) % reviews.length);
-    };
-
-    const prevReview = () => {
-        setActiveIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
-    };
-
-    const activeReview = reviews[activeIndex];
-
     return (
-        <section className="relative flex min-h-[430px] items-center justify-center bg-[#f7f8fb] px-6 py-16 text-[#0F0F0F]">
-            <button
-                type="button"
-                onClick={prevReview}
-                className="absolute left-5 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#FF6B00] text-[#0F0F0F] transition hover:bg-[#FF6B00] hover:text-white md:left-10"
-                aria-label="Previous review"
-            >
-                <IoArrowBack size={24} />
-            </button>
+        <section className="bg-[#0F0F0F] px-5 py-20 text-white md:px-8 lg:px-12">
+            <div className="mx-auto max-w-7xl">
+                <div className="mb-10">
+                    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#FF6B00]">
+                        Leadership Voices
+                    </p>
 
-            <div className="mx-auto max-w-3xl text-center">
-                <div className="mx-auto mb-9 h-16 w-16 overflow-hidden rounded-full bg-[#FF6B00] p-1">
-                    <img
-                        src={activeReview.image}
-                        alt={activeReview.name}
-                        className="h-full w-full rounded-full object-cover"
-                    />
+                    <h2 className="text-4xl font-black uppercase leading-tight md:text-5xl">
+                        What Our Leaders Say
+                    </h2>
                 </div>
 
-                <p className="text-lg leading-relaxed text-[#0F0F0F] md:text-xl">
-                    "{activeReview.quote}"
-                </p>
+                <div className="relative">
+                    <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-[#0F0F0F] to-transparent" />
+                    <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-[#0F0F0F] to-transparent" />
 
-                <h3 className="mt-2 text-base font-semibold text-[#0F0F0F]">
-                    {activeReview.name}
-                </h3>
+                    <div className="flex gap-6 overflow-x-auto scroll-smooth pb-6 snap-x snap-mandatory no-scrollbar">
+                        {reviews.map((review) => (
+                            <article
+                                key={review.name}
+                                className="min-w-[85%] snap-start rounded-lg border border-white/10 bg-[#1A1A1A] p-6 sm:min-w-[420px] lg:min-w-[calc((100%-48px)/3)]"
+                            >
+                                <div className="mb-7 flex items-center gap-4">
+                                    <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-[#FF6B00] bg-[#0F0F0F] p-1">
+                                        <img
+                                            src={review.image}
+                                            alt={review.name}
+                                            className="h-full w-full rounded-full object-cover"
+                                        />
+                                    </div>
 
-                <p className="mt-2 text-sm text-[#666666]">{activeReview.role}</p>
-            </div>
+                                    <div>
+                                        <h3 className="text-base font-bold text-white">
+                                            {review.name}
+                                        </h3>
+                                        <p className="mt-1 text-sm leading-5 text-[#B0B0B0]">
+                                            {review.role}
+                                        </p>
+                                    </div>
+                                </div>
 
-            <button
-                type="button"
-                onClick={nextReview}
-                className="absolute right-5 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#FF6B00] text-[#0F0F0F] transition hover:bg-[#FF6B00] hover:text-white md:right-10"
-                aria-label="Next review"
-            >
-                <IoArrowForward size={24} />
-            </button>
-
-            <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 items-center gap-3">
-                {reviews.map((_, index) => (
-                    <button
-                        key={index}
-                        type="button"
-                        onClick={() => setActiveIndex(index)}
-                        className={`h-2.5 w-2.5 rounded-full transition ${activeIndex === index ? "bg-[#666666]" : "bg-[#B0B0B0]"
-                            }`}
-                        aria-label={`Go to review ${index + 1}`}
-                    />
-                ))}
+                                <p className="text-base leading-7 text-white">
+                                    "{review.quote}"
+                                </p>
+                            </article>
+                        ))}
+                    </div>
+                </div>
             </div>
         </section>
     );

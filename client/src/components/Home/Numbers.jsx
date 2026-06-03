@@ -131,7 +131,7 @@ const StatItem = ({ stat, isVisible, index }) => {
         {stat.separator && (
           <>
             <span
-              className="text-[#FF6B00] font-black text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] leading-none italic mx-0.5"
+              className="text-[#FF6B00] font-black pr-3 text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] leading-none italic mx-0.5"
               style={{ fontFamily: "'Arial Black', 'Helvetica Neue', sans-serif" }}
             >
               {stat.separator}
@@ -190,12 +190,12 @@ const Numbers = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#0F0F0F] py-16 md:py-24 lg:py-32"
+      className="bg-[#0F0F0F] py-16 md:py-24 lg:py-22"
     >
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <div className="max-w-[1440px] text-center mx-auto px-6 lg:px-10">
 
         {/* ── Heading + CTA ── */}
-        <div className="max-w-[600px] mb-14 md:mb-20">
+        <div className="max-w-[900px] mx-auto mb-14 md:mb-20">
           <h2
             className="text-white/90 text-[1.6rem] sm:text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]
               leading-[1.2] font-light tracking-tight"

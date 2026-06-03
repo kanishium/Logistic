@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 // Video served from public/ folder — not bundled by Vite
 const heroVideo = '/HeroSectionvideo.mp4';
 
+/* Google Fonts link injected once for the ultra-condensed heading */
+if (!document.querySelector('link[data-hero-font]')) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap';
+    link.setAttribute('data-hero-font', 'true');
+    document.head.appendChild(link);
+}
+
 /* ─── Service items for the bottom selector ─── */
 const services = [
     {
@@ -90,11 +99,17 @@ const Hero = () => {
             <div className="relative z-10 flex flex-col justify-between h-full max-w-[1440px] mx-auto px-6 lg:px-10">
 
                 {/* ── Main Heading Area ── */}
-                <div className="flex flex-col justify-center flex-1 pt-20 md:pt-28">
+                <div className="flex flex-col justify-center flex-1 md:justify-start md:pt-10">
                     <h1
-                        className="text-white font-black uppercase leading-[0.92] tracking-tight
-              text-[clamp(2.8rem,8vw,7rem)]"
-                        style={{ fontFamily: "'Arial Black', 'Helvetica Neue', sans-serif" }}
+                        className="text-white font-bold uppercase
+              text-[clamp(3.5rem,10vw,9rem)]"
+                        style={{
+                            fontFamily: "'Oswald', Impact, 'Arial Narrow', sans-serif",
+                            fontWeight: 700,
+                            lineHeight: 0.95,
+                            letterSpacing: '-0.02em',
+                            fontStretch: 'condensed',
+                        }}
                     >
                         SUPPLY CHAIN<br />
                         EXCELLENCE
@@ -103,7 +118,7 @@ const Hero = () => {
                     {/* CTA Link */}
                     <Link
                         to="/services"
-                        className="mt-8 md:mt-10 inline-flex items-center gap-3 group/cta w-fit"
+                        className="mt-8 md:mt-8 inline-flex items-center gap-3 group/cta w-fit"
                     >
                         {/* Arrow circle */}
                         <span className="
@@ -134,7 +149,7 @@ const Hero = () => {
                 {/* ═══════════════════════════════════════════ */}
                 {/* ── Bottom Service Selector ── */}
                 {/* ═══════════════════════════════════════════ */}
-                <div className="pb-8 mt-17 md:pb-12">
+                <div className="pb-8 mt-17 md:pb-25 ">
 
                     {/* ── Track + Ball ── */}
                     <div ref={trackRef} className="relative w-full">

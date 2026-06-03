@@ -4,14 +4,14 @@ const HeroSectionvideo = '/HeroSectionvideo.mp4';
 
 const ServiceHero = () => {
     return (
-        <section className="bg-[#ffff] px-5 py-20 text-white md:px-8 lg:px-12">
+        <section className="bg-[#ffff] px-5 py-5 text-white md:px-8 lg:px-12">
             <div className="mx-auto max-w-7xl">
-                <h1 className="relative text-black z-10 text-5xl font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
+                <h1 className="relative text-black z-10 text-center text-5xl font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
                     Your strategic <br />
                     supply chain <span className="text-[#FF6B00]">Partner</span>
                 </h1>
 
-                <div className="relative -mt-4 ml-auto overflow-hidden rounded-lg bg-[#1A1A1A] md:-mt-8 md:w-[88%]">
+                <div className="relative mt-8 mx-auto overflow-hidden rounded-lg bg-[#1A1A1A] md:mt-10">
                     <video
                         src={HeroSectionvideo}
                         autoPlay
@@ -22,19 +22,56 @@ const ServiceHero = () => {
                     />
                 </div>
 
-                <div className="mx-auto mt-12 max-w-2xl border-t border-[#FF6B00] pt-8 md:ml-[42%] md:mt-14">
-                    <h2 className="text-2xl font-semibold text-black md:text-3xl">
-                        Our Culture Starts and Ends with You
-                    </h2>
+                <div className="mt-12 border-t border-[#FF6B00] pt-10 md:mt-14">
+                    <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-start">
+                        <div>
+                            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#FF6B00]">
+                                Service Advantage
+                            </p>
 
-                    <p className="mt-5 text-base leading-7 text-gray-600">
-                        At ITS Logistics, every single team member is committed to a
-                        relentless pursuit of excellence. Here, your honesty and drive to
-                        win are celebrated, and your willingness to hold yourself and those
-                        around you accountable drives our shared success. We truly believe
-                        that, together, we can conquer any challenge and empower futures for
-                        ourselves, our teams, and our communities.
-                    </p>
+                            <h2 className="mt-4 text-3xl font-black uppercase leading-tight text-black md:text-4xl">
+                                Logistics Built Around Speed, Visibility, And Control
+                            </h2>
+                        </div>
+
+                        <div>
+                            <p className="text-lg leading-8 text-[black]">
+                                Our services are designed to keep freight moving with clarity and
+                                confidence. From truckload and drayage to fulfillment and supply chain
+                                support, we bring flexible solutions, responsive communication, and
+                                dependable execution to every shipment.
+                            </p>
+
+                            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                                <div className="border-l border-[#FF6B00] pl-4">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                        Move Faster
+                                    </h3>
+                                    <p className="mt-2 text-sm leading-6 text-black">
+                                        We help reduce delays and keep freight flowing.
+                                    </p>
+                                </div>
+
+                                <div className="border-l border-[#FF6B00] pl-4">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                        Stay Visible
+                                    </h3>
+                                    <p className="mt-2 text-sm leading-6 text-black">
+                                        We give teams clearer insight across the supply chain.
+                                    </p>
+                                </div>
+
+                                <div className="border-l border-[#FF6B00] pl-4">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                        Scale Smarter
+                                    </h3>
+                                    <p className="mt-2 text-sm leading-6 text-[#B0B0B0]">
+                                        We adapt solutions as your volume and needs change.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -6,6 +6,9 @@ import { FiArrowRight } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
+/* Navbar height: 40px top-bar + 72px main-nav = 112px */
+const NAV_HEIGHT = 112;
+
 const services = [
     {
         title: "Truckload Services",
@@ -72,10 +75,11 @@ const SideScroll = () => {
         >
             <div
                 ref={trackRef}
-                className="flex h-full w-max items-stretch gap-8 px-6 py-12 md:px-12 lg:px-12"
+                className="flex w-max items-stretch gap-8 px-6 pb-10 md:px-12 lg:px-12"
+                style={{ height: `calc(100% - ${NAV_HEIGHT}px)`, marginTop: `${NAV_HEIGHT}px` }}
             >
                 <div className="flex h-full w-[560px] shrink-0 flex-col justify-center">
-                    <h2 className="max-w-[560px] text-5xl font-black leading-[1.08] tracking-tight text-white md:text-6xl lg:text-7xl">
+                    <h2 className="max-w-[560px] text-4xl font-black leading-[1.08] tracking-tight text-white md:text-6xl lg:text-5xl">
                         We go beyond your traditional logistics service provider to make
                         your world better and your supply chain more efficient.
                     </h2>

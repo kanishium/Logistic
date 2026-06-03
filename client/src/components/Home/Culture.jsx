@@ -81,7 +81,7 @@ const Culture = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#0F0F0F] py-10 md:py-32 lg:py-40 overflow-hidden"
+      className="relative bg-[#0F0F0F] py-10 md:py-32 lg:py-20 overflow-hidden"
     >
       {/* ── Decorative Curved Path ── */}
       <div className="absolute top-0 left-0 w-[140px] md:w-[220px] lg:w-[300px] h-full pointer-events-none">
@@ -147,7 +147,7 @@ const Culture = () => {
                 <div
                   key={point.number}
                   ref={(el) => (pointRefs.current[i] = el)}
-                  className="py-14 md:py-20 lg:py-24 will-change-transform"
+                  className="py-8 md:py-10 lg:py-12 will-change-transform"
                   style={{
                     opacity: v ? 1 : 0,
                     transform: v ? 'translate3d(0,0,0)' : 'translate3d(0,30px,0)',
@@ -214,7 +214,7 @@ const Culture = () => {
                   {/* Divider */}
                   {i < points.length - 1 && (
                     <div
-                      className="mt-14 md:mt-20 h-[1px] max-w-[500px] bg-gradient-to-r from-white/10 to-transparent will-change-transform"
+                      className="mt-8 md:mt-10 h-[1px] max-w-[500px] bg-gradient-to-r from-white/10 to-transparent will-change-transform"
                       style={{
                         opacity: v ? 1 : 0,
                         transform: v ? 'scaleX(1)' : 'scaleX(0)',

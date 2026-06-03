@@ -190,19 +190,22 @@ const MapSection = () => {
                                 <button
                                     key={cat.id}
                                     onClick={() => toggle(cat.id)}
-                                    className="group flex min-h-[70px] w-fit max-w-full items-center gap-5 rounded-full border-2 px-2 pr-8 text-left text-md font-medium leading-tight cursor-pointer transition-all duration-300 ease-out select-none hover:scale-[1.02] active:scale-[0.98]"
+                                    className="group flex min-h-[70px] w-fit max-w-full items-center gap-5 rounded-full border px-2 pr-8 text-left text-md font-medium leading-tight cursor-pointer transition-all duration-300 ease-out select-none hover:scale-[1.02] active:scale-[0.98]"
                                     style={{
-                                        background: isOn ? COL.orange : `${COL.orange}44`,
-                                        color: isOn ? "#0F0F0F" : `${COL.white}99`,
-                                        borderColor: isOn ? COL.orange : `${COL.orange}55`,
-                                        boxShadow: isOn ? `0 0 24px ${COL.orange}55` : "none",
+                                        background: isOn
+                                            ? 'linear-gradient(135deg, rgba(255,107,0,0.25) 0%, rgba(255,107,0,0.12) 100%)'
+                                            : 'rgba(255,255,255,0.05)',
+                                        color: isOn ? '#FFFFFF' : 'rgba(255,255,255,0.5)',
+                                        borderColor: isOn ? 'rgba(255,107,0,0.7)' : 'rgba(255,255,255,0.1)',
+                                        boxShadow: isOn ? '0 0 28px rgba(255,107,0,0.25), inset 0 1px 0 rgba(255,255,255,0.08)' : 'inset 0 1px 0 rgba(255,255,255,0.04)',
                                     }}
                                 >
                                     <span
                                         className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-all duration-300"
                                         style={{
-                                            background: isOn ? "#0F0F0F" : `${COL.white}22`,
-                                            color: isOn ? COL.orange : `${COL.orange}aa`,
+                                            background: isOn ? 'rgba(255,107,0,0.35)' : 'rgba(255,255,255,0.08)',
+                                            color: isOn ? '#FF8C33' : 'rgba(255,255,255,0.4)',
+                                            border: isOn ? '1px solid rgba(255,107,0,0.5)' : '1px solid rgba(255,255,255,0.1)',
                                         }}
                                     >
                                         {cat.icon}

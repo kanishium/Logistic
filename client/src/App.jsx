@@ -8,6 +8,7 @@ import OurCulture from './pages/OurCulture';
 import Carriers from './pages/Carriers';
 import Technology from './pages/Technology';
 import News from './pages/News';
+import NewsArticle from './pages/NewsArticle';
 import Contact from './pages/Contact';
 
 // Scroll to top on every route change
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/carriers" element={<Carriers />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:slug" element={<NewsArticle />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
