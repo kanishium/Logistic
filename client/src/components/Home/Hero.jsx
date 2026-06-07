@@ -77,7 +77,7 @@ const Hero = () => {
             {/* ═══════════════════════════════════════════ */}
             {/* ── Background Video ── */}
             {/* ═══════════════════════════════════════════ */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 ">
                 <video
                     className="w-full h-full object-cover"
                     autoPlay
@@ -86,7 +86,8 @@ const Hero = () => {
                     playsInline
                     poster=""
                 >
-                    <source src={heroVideo} type="video/mp4" />
+                    <source src="
+https://cdn.sanity.io/files/6mx0z6jm/production/5eda0f71403576cf9ff0467cbe3b2bc1bb17830c.mp4" type="video/mp4" />
                 </video>
 
                 {/* Dark overlay gradient for text readability */}
