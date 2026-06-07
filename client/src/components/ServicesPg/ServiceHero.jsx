@@ -13,7 +13,8 @@ const ServiceHero = () => {
 
                 <div className="relative mt-8 mx-auto overflow-hidden rounded-lg bg-[#1A1A1A] md:mt-10">
                     <video
-                        src={HeroSectionvideo}
+                        src="
+https://cdn.sanity.io/files/6mx0z6jm/production/5eda0f71403576cf9ff0467cbe3b2bc1bb17830c.mp4"
                         autoPlay
                         loop
                         muted

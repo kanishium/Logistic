@@ -13,7 +13,8 @@ const CultureHero = () => {
 
                 <div className="relative mt-8 mx-auto overflow-hidden rounded-lg bg-[#1A1A1A] md:mt-10">
                     <video
-                        src={HeroSectionvideo}
+                        src="
+https://cdn.sanity.io/files/6mx0z6jm/production/e542b937e13d343467aff5ba5a7438d8f23b478f.mp4"
                         autoPlay
                         loop
                         muted
