@@ -4,9 +4,9 @@ const HeroSectionvideo = '/HeroSectionvideo.mp4';
 
 const ServiceHero = () => {
     return (
-        <section className="bg-[#ffff] px-5 py-5 text-white md:px-8 lg:px-12">
+        <section className="bg-black py-5 text-white md:px-8 lg:px-12">
             <div className="mx-auto max-w-7xl">
-                <h1 className="relative text-black z-10 text-center text-5xl font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
+                <h1 className="relative text-white text-center text-5xl font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
                     Your strategic <br />
                     supply chain <span className="text-[#FF6B00]">Partner</span>
                 </h1>

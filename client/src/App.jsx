@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Footer from './components/Footer';
 import OurCulture from './pages/OurCulture';
 import Carriers from './pages/Carriers';
+import Company from './pages/Company';
 import Technology from './pages/Technology';
 import News from './pages/News';
 import NewsArticle from './pages/NewsArticle';
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/culture" element={<OurCulture />} />
         <Route path="/carriers" element={<Carriers />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:slug" element={<NewsArticle />} />

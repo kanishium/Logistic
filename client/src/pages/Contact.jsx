@@ -182,7 +182,7 @@ const Contact = () => {
                             href="tel:8555623487"
                             className="mt-5 block text-2xl font-medium text-white"
                         >
-                            855-562-3487
+                            999-999-9999
                         </a>
 
                         <div className="mt-8 h-px w-20 bg-white/30" />
@@ -190,13 +190,13 @@ const Contact = () => {
                         <div className="mt-8 space-y-5">
                             <div className="border-l border-[#FF6B00] pl-4">
                                 <p className="text-sm font-semibold text-white">Headquarters</p>
-                                <p className="mt-1 text-sm text-[#B0B0B0]">Sparks, NV 89431</p>
+                                <p className="mt-1 text-sm text-[#B0B0B0]">XYZ, Place Here</p>
                             </div>
 
                             <div className="border-l border-[#FF6B00] pl-4">
                                 <p className="text-sm font-semibold text-white">Email</p>
                                 <a href="mailto:info@itslogistics.com" className="mt-1 block text-sm text-[#B0B0B0] hover:text-[#FF6B00] transition-colors">
-                                    info@itslogistics.com
+                                    mail@org.com
                                 </a>
                             </div>
 

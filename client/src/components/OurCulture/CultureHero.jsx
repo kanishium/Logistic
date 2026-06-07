@@ -4,7 +4,7 @@ const HeroSectionvideo = '/HeroSectionvideo.mp4';
 
 const CultureHero = () => {
     return (
-        <section className="bg-[#0F0F0F] px-5 py-10 text-white md:px-8 lg:px-12">
+        <section className="bg-[#0F0F0F] px-5 py-5 text-white md:px-8 lg:px-12">
             <div className="mx-auto max-w-7xl">
                 <h1 className="relative z-10 text-center text-5xl font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
                     The Foundation Of <br />

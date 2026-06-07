@@ -48,7 +48,7 @@ const Footer = () => {
                             </p>
 
                             <Link
-                                to="/careers"
+                                to="/company"
                                 className="mt-7 inline-flex items-center gap-3 border border-[#FF6B00] px-4 py-3 text-xs font-bold uppercase text-white transition hover:bg-[#FF6B00] hover:text-black"
                             >
                                 Join Our Team
@@ -71,7 +71,7 @@ const Footer = () => {
                             href="tel:8555623487"
                             className="mt-5 block text-2xl font-medium text-white"
                         >
-                            855-562-3487
+                            999-999-9999
                         </a>
 
                         <div className="mt-8 h-px w-20 bg-white/30" />
@@ -89,19 +89,6 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="border-b border-white/20">
-                <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 py-8 sm:grid-cols-3 md:grid-cols-6 lg:px-10">
-                    {partnerLogos.map((logo) => (
-                        <div
-                            key={logo}
-                            className="flex h-12 items-center justify-center text-2xl font-black uppercase tracking-tight text-[#B0B0B0]"
-                        >
-                            {logo}
-                        </div>
-                    ))}
                 </div>
             </div>
 
