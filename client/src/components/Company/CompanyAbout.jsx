@@ -18,7 +18,7 @@ const CompanyAbout = () => {
                     {/* Right — Description */}
                     <div>
                         <p className="text-lg leading-8 text-[#B0B0B0]">
-                            ITS Logistics is a premier third-party logistics company providing
+                            ShipNex is a premier third-party logistics company providing
                             creative supply chain solutions. With a passion for excellence, we
                             leverage our nationwide network to deliver customized, technology-driven
                             transportation and distribution solutions that help businesses compete

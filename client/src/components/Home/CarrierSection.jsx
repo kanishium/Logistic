@@ -25,7 +25,7 @@ const CarrierSection = () => {
 
                     <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
                         <Link
-                            to="/carrier"
+                            to="/company"
                             className="group inline-flex w-fit items-center gap-4 rounded-full bg-[#FF6B00] px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-[#0F0F0F]"
                         >
                             Join our carrier network

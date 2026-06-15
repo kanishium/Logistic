@@ -50,7 +50,7 @@ app.post("/api/contact", async (req, res) => {
         }
 
         const adminEmail = process.env.ADMIN_EMAIL;
-        const brandFrom = `"ITS Logistics" <${process.env.SMTP_USER}>`;
+        const brandFrom = `"ShipNex" <${process.env.SMTP_USER}>`;
 
         // ── 1. Email to Admin ──
         const adminHtml = `
@@ -88,7 +88,7 @@ app.post("/api/contact", async (req, res) => {
         <div class="message-box">${message.replace(/\n/g, "<br>")}</div>
       </div>
     </div>
-    <div class="footer">ITS Logistics Contact Form</div>
+    <div class="footer">ShipNex Contact Form</div>
   </div>
 </body>
 </html>`;
@@ -131,7 +131,7 @@ app.post("/api/contact", async (req, res) => {
       <p>If you need immediate assistance, feel free to give us a call or reply directly to this email.</p>
     </div>
     <div class="footer">
-      © ${new Date().getFullYear()} ITS Logistics — An ECHO Company<br>
+      © ${new Date().getFullYear()} ShipNex — An ECHO Company<br>
       This is an automated confirmation.
     </div>
   </div>
@@ -149,7 +149,7 @@ app.post("/api/contact", async (req, res) => {
             transporter.sendMail({
                 from: brandFrom,
                 to: email,
-                subject: "We received your message — ITS Logistics",
+                subject: "We received your message — ShipNex",
                 html: userHtml,
             }),
         ]);

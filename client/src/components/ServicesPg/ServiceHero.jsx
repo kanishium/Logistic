@@ -30,13 +30,13 @@ https://cdn.sanity.io/files/6mx0z6jm/production/5eda0f71403576cf9ff0467cbe3b2bc1
                                 Service Advantage
                             </p>
 
-                            <h2 className="mt-4 text-3xl font-black uppercase leading-tight text-black md:text-4xl">
+                            <h2 className="mt-4 text-3xl font-black uppercase leading-tight text-white md:text-4xl">
                                 Logistics Built Around Speed, Visibility, And Control
                             </h2>
                         </div>
 
                         <div>
-                            <p className="text-lg leading-8 text-[black]">
+                            <p className="text-lg leading-8 text-[white]">
                                 Our services are designed to keep freight moving with clarity and
                                 confidence. From truckload and drayage to fulfillment and supply chain
                                 support, we bring flexible solutions, responsive communication, and
@@ -45,28 +45,28 @@ https://cdn.sanity.io/files/6mx0z6jm/production/5eda0f71403576cf9ff0467cbe3b2bc1
 
                             <div className="mt-8 grid gap-4 sm:grid-cols-3">
                                 <div className="border-l border-[#FF6B00] pl-4">
-                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-white">
                                         Move Faster
                                     </h3>
-                                    <p className="mt-2 text-sm leading-6 text-black">
+                                    <p className="mt-2 text-sm leading-6 text-white">
                                         We help reduce delays and keep freight flowing.
                                     </p>
                                 </div>
 
                                 <div className="border-l border-[#FF6B00] pl-4">
-                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-white">
                                         Stay Visible
                                     </h3>
-                                    <p className="mt-2 text-sm leading-6 text-black">
+                                    <p className="mt-2 text-sm leading-6 text-white">
                                         We give teams clearer insight across the supply chain.
                                     </p>
                                 </div>
 
                                 <div className="border-l border-[#FF6B00] pl-4">
-                                    <h3 className="text-sm font-bold uppercase tracking-wide text-black">
+                                    <h3 className="text-sm font-bold uppercase tracking-wide text-white">
                                         Scale Smarter
                                     </h3>
-                                    <p className="mt-2 text-sm leading-6 text-[#B0B0B0]">
+                                    <p className="mt-2 text-sm leading-6 text-white">
                                         We adapt solutions as your volume and needs change.
                                     </p>
                                 </div>

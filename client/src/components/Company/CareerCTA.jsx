@@ -11,7 +11,7 @@ const CareerCTA = () => {
                     <div className="relative h-[300px] md:h-full min-h-[360px] overflow-hidden">
                         <img
                             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
-                            alt="Team collaboration at ITS Logistics"
+                            alt="Team collaboration at ShipNex"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1A1A1A]/30 hidden md:block" />

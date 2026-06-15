@@ -49,7 +49,7 @@ const Contact = () => {
     return (
         <div className="bg-[#0F0F0F] text-white">
             {/* ── Heading ── */}
-            <section className="px-6 pt-24 pb-16 lg:px-10">
+            <section className="px-6 pt-4 pb-16 lg:px-10">
                 <div className="mx-auto max-w-7xl">
                     <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-[#FF6B00]">
                         Contact

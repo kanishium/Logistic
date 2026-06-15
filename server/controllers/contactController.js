@@ -19,7 +19,7 @@ export const submitContact = async (req, res) => {
         }
 
         const adminEmail = process.env.ADMIN_EMAIL;
-        const brandFrom = `"ITS Logistics" <${process.env.SMTP_USER}>`;
+        const brandFrom = `"ShipNex" <${process.env.SMTP_USER}>`;
 
         // ── 1. Email to Admin ──
         const adminHtml = `
@@ -57,7 +57,7 @@ export const submitContact = async (req, res) => {
         <div class="message-box">${message.replace(/\n/g, "<br>")}</div>
       </div>
     </div>
-    <div class="footer">ITS Logistics Contact Form</div>
+    <div class="footer">ShipNex Contact Form</div>
   </div>
 </body>
 </html>`;
@@ -103,7 +103,7 @@ export const submitContact = async (req, res) => {
       </p>
     </div>
     <div class="footer">
-      © ${new Date().getFullYear()} ITS Logistics — An ECHO Company<br>
+      © ${new Date().getFullYear()} ShipNex — An ECHO Company<br>
       This is an automated confirmation. Please do not reply to this email.
     </div>
   </div>
@@ -121,7 +121,7 @@ export const submitContact = async (req, res) => {
             transporter.sendMail({
                 from: brandFrom,
                 to: email,
-                subject: "We received your message — ITS Logistics",
+                subject: "We received your message — ShipNex",
                 html: userHtml,
             }),
         ]);

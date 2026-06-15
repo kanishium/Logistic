@@ -22,7 +22,7 @@ const ITSEngage = () => {
                             Shipper Platform
                         </p>
                         <h2 className="text-4xl font-black leading-tight md:text-5xl">
-                            ITS Engage
+                            ShipNex Engage
                         </h2>
                         <p className="mt-5 max-w-lg text-base leading-7 text-gray-400">
                             Our proprietary shipper portal puts the power of your entire

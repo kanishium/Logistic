@@ -15,13 +15,13 @@ const newsCards = [
         image:
             "https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&w=900&q=80",
         title:
-            "ITS Logistics May Supply Chain Report: Broker Liability Ruling and Inventory Replenishment Collide with Most Expensive Freight Market in Years",
+            "ShipNex May Supply Chain Report: Broker Liability Ruling and Inventory Replenishment Collide with Most Expensive Freight Market in Years",
     },
     {
         image:
             "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=900&q=80",
         title:
-            "ITS Logistics May Port/Rail Ramp Freight Index: Strait of Hormuz Closure Sends Fuel Shock Through Supply Chains",
+            "ShipNex May Port/Rail Ramp Freight Index: Strait of Hormuz Closure Sends Fuel Shock Through Supply Chains",
     },
 ];
 
@@ -29,7 +29,7 @@ const latestNews = [
     {
         type: "Latest",
         title:
-            "ITS Logistics April Supply Chain Report: Hormuz Crisis Strains Freight Markets Heading into Q2",
+            "ShipNex April Supply Chain Report: Hormuz Crisis Strains Freight Markets Heading into Q2",
     },
     {
         type: "Blog",
@@ -38,17 +38,17 @@ const latestNews = [
     {
         type: "Press Release",
         title:
-            "ITS Logistics April Port/Rail Ramp Freight Index: Hormuz Crisis and Capacity Squeeze Drive First Sustained Cost Increases Since COVID",
+            "ShipNex April Port/Rail Ramp Freight Index: Hormuz Crisis and Capacity Squeeze Drive First Sustained Cost Increases Since COVID",
     },
     {
         type: "Press Release",
         title:
-            "ITS Logistics Combats Rising Freight Fraud with Tech-Enabled, Human-Led Security Strategy",
+            "ShipNex Combats Rising Freight Fraud with Tech-Enabled, Human-Led Security Strategy",
     },
     {
         type: "Press Release",
         title:
-            "ITS Logistics Partners with Indianapolis Zoo to Present xZOOberance Spring Festival",
+            "ShipNex Partners with Indianapolis Zoo to Present xZOOberance Spring Festival",
     },
 ];
 

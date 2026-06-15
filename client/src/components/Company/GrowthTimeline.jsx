@@ -4,7 +4,7 @@ const milestones = [
     {
         year: "2006",
         title: "Founded in Reno",
-        desc: "ITS Logistics was founded with a vision to create a different kind of logistics company — one built on culture, technology, and relentless customer focus.",
+        desc: "ShipNex was founded with a vision to create a different kind of logistics company — one built on culture, technology, and relentless customer focus.",
     },
     {
         year: "2012",

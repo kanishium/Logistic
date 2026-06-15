@@ -14,42 +14,42 @@ import {
 const reviews = [
     {
         quote:
-            "ITS has provided third party logistics solutions that have provided cost savings while enhancing service, and they are an integral part of the Starbucks supply chain.",
+            "ShipNex has provided third party logistics solutions that have delivered cost savings while enhancing service, and they are an integral part of our supply chain.",
         name: "Todd McCullough",
         role: "Director of Distribution at Starbucks",
         icon: <SiStarbucks />,
     },
     {
         quote:
-            "ITS understands time-sensitive logistics. Their execution, visibility, and support have made a measurable difference for our distribution team.",
+            "ShipNex understands time-sensitive logistics. Their execution, visibility, and support have made a measurable difference for our distribution team.",
         name: "Michael Brown",
         role: "Supply Chain Director at FedEx",
         icon: <SiFedex />,
     },
     {
         quote:
-            "We value their ability to adapt quickly, solve problems before they slow us down, and maintain a high level of service across locations.",
+            "We value ShipNex's ability to adapt quickly, solve problems before they slow us down, and maintain a high level of service across locations.",
         name: "Emily Carter",
         role: "Regional Logistics Lead at DHL",
         icon: <SiDhl />,
     },
     {
         quote:
-            "The team brings consistency and accountability to every shipment. That reliability has helped us improve both planning and customer delivery.",
+            "The ShipNex team brings consistency and accountability to every shipment. That reliability has helped us improve both planning and customer delivery.",
         name: "David Miller",
         role: "Transportation Manager at UPS",
         icon: <SiUps />,
     },
     {
         quote:
-            "Their logistics support has helped us reduce delays, improve coordination, and strengthen the flow of products through our retail network.",
+            "ShipNex's logistics support has helped us reduce delays, improve coordination, and strengthen the flow of products through our retail network.",
         name: "Jessica Wilson",
         role: "Distribution Planning Manager at Walmart",
         icon: <SiWalmart />,
     },
     {
         quote:
-            "ITS has been a strong partner for our delivery operations, offering practical solutions and dependable service when volume increases.",
+            "ShipNex has been a strong partner for our delivery operations, offering practical solutions and dependable service when volume increases.",
         name: "Robert Davis",
         role: "Supply Chain Manager at Target",
         icon: <SiTarget />,
@@ -63,20 +63,19 @@ const reviews = [
     },
     {
         quote:
-            "We depend on partners who can keep pace with rapid growth. ITS has delivered the responsiveness and precision our operation requires.",
+            "We depend on partners who can keep pace with rapid growth. ShipNex has delivered the responsiveness and precision our operation requires.",
         name: "Chris Anderson",
         role: "Warehouse Operations Lead at Tesla",
         icon: <SiTesla />,
     },
     {
         quote:
-            "Their team provides the visibility and dependability we need across complex logistics workflows, helping us maintain service quality at scale.",
+            "The ShipNex team provides the visibility and dependability we need across complex logistics workflows, helping us maintain service quality at scale.",
         name: "Rachel Thompson",
         role: "Global Supply Chain Analyst at Apple",
         icon: <SiApple />,
     },
 ];
-
 const Review = () => {
     const scrollRef = useRef(null);
     const [scrollProgress, setScrollProgress] = useState(0);

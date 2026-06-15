@@ -12,7 +12,7 @@ const NewsHero = () => {
             {/* ── Page Title ── */}
             <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-5 text-center pb-4">
                 <h1 className="relative z-10 text-center text-5xl text-white font-black uppercase leading-[0.88] tracking-tight md:text-7xl lg:text-8xl">
-                    NEWS<span className="text-[#FF6B00]">+</span>RESOURCES
+                    NEWS<span className="text-[#FF6B00]"> + </span>RESOURCES
                 </h1>
             </div>
 
@@ -52,7 +52,7 @@ const NewsHero = () => {
                             {/* Author */}
                             <div className="mt-8 md:mt-0">
                                 <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF6B00]/80">
-                                    ITS Logistics
+                                    ShipNex
                                 </span>
                             </div>
                         </div>

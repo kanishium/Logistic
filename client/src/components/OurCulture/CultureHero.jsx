@@ -38,7 +38,7 @@ https://cdn.sanity.io/files/6mx0z6jm/production/e542b937e13d343467aff5ba5a7438d8
                         <div>
                             <p className="text-lg leading-8 text-[#B0B0B0]">
                                 Our culture starts with people who take ownership, move with honesty,
-                                and show up for one another. At ITS Logistics, every team member plays
+                                and show up for one another. At ShipNex, every team member plays
                                 a part in building momentum, solving challenges, and creating better
                                 outcomes for our customers, our teams, and our communities.
                             </p>

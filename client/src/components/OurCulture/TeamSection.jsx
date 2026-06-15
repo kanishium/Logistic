@@ -9,15 +9,15 @@ const teamCards = [
         image:
             "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
         text:
-            "We invest in your personal and professional growth, providing the tools, resources, and support you need to unlock your full potential.",
+            "At ShipNex, we invest in your personal and professional growth, providing the tools, resources, and support you need to unlock your full potential.",
     },
     {
-        title: "The ITS Way",
+        title: "The ShipNex Way",
         label: "Embodying Our Culture",
         image:
             "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
         text:
-            "The ITS Way guides how we think, act, and show up for each other and our customers, defined by honesty, adaptability, and commitment.",
+            "The ShipNex Way guides how we think, act, and show up for each other and our customers, defined by integrity, adaptability, and a commitment to excellence.",
     },
     {
         title: "A Commitment to Excellence",
@@ -25,7 +25,7 @@ const teamCards = [
         image:
             "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
         text:
-            "We build a high-energy, goal-oriented environment where people take pride in doing meaningful work and delivering results.",
+            "We foster a high-energy, growth-driven environment where talented people take pride in solving complex logistics challenges and delivering exceptional results.",
     },
 ];
 
@@ -38,7 +38,7 @@ const TeamSection = () => {
                         <p className="max-w-2xl text-lg leading-8 text-white md:text-xl">
                             "I love seeing people on my team grow, seeing them be promoted,
                             and just the positive changes in their professional careers. At
-                            ITS, you're really changing people's lives whether you're their
+                            ShipNex, you're really changing people's lives whether you're their
                             direct manager or not."
                         </p>
 

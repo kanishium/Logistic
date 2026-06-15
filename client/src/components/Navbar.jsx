@@ -16,6 +16,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const drawerRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -35,7 +36,10 @@ const Navbar = () => {
   useEffect(() => {
     if (!mobileOpen) return;
     const handleClick = (e) => {
-      if (drawerRef.current && !drawerRef.current.contains(e.target)) {
+      if (
+        drawerRef.current && !drawerRef.current.contains(e.target) &&
+        hamburgerRef.current && !hamburgerRef.current.contains(e.target)
+      ) {
         setMobileOpen(false);
       }
     };
@@ -65,23 +69,18 @@ const Navbar = () => {
           <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 lg:px-10 h-[72px]">
 
             {/* ── Logo ── */}
-            <Link to="/" className="flex items-center gap-1 group shrink-0" aria-label="ITS Logistics Home">
+            <Link to="/" className="flex items-center gap-1 group shrink-0" aria-label="ShipNex Home">
               <div className="flex flex-col leading-none select-none">
                 <span
                   className="text-[#FF6B00] font-black italic text-[28px] tracking-tight leading-[1]"
                   style={{ fontFamily: "'Trebuchet MS', 'Arial Black', sans-serif" }}
                 >
-                  its
+                  ShipNex
                 </span>
                 <span
                   className="text-white text-[9px] font-semibold tracking-[0.22em] uppercase leading-[1.2]"
                 >
                   logistics
-                </span>
-                <span
-                  className="text-white/40 text-[6.5px] tracking-[0.12em] leading-[1.6]"
-                >
-                  An <span className="font-bold text-white/50">ECHO</span> Company
                 </span>
               </div>
             </Link>
@@ -153,6 +152,7 @@ const Navbar = () => {
 
             {/* ── Mobile Hamburger ── */}
             <button
+              ref={hamburgerRef}
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] group/ham"
               aria-label="Toggle navigation menu"

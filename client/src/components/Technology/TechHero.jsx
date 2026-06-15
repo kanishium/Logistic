@@ -36,7 +36,7 @@ const TechHero = () => {
 
                         <div>
                             <p className="text-lg leading-8 text-[#B0B0B0]">
-                                At ITS Logistics, we harness innovation and proprietary technology
+                                At ShipNex, we harness innovation and proprietary technology
                                 to deliver real-time supply chain visibility. Our suite of technology
                                 platforms gives you the control and insight needed to make smarter,
                                 faster decisions across your entire logistics network.

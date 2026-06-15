@@ -27,11 +27,11 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white">
             <div className="border-y border-white/20">
-                <div className="mx-auto grid max-w-7xl gap-12 px-6 py-14 md:grid-cols-[1.1fr_1fr] lg:px-10">
+                <div className="mx-auto grid max-w-7xl gap-12 px-2 py-14 md:grid-cols-[1.1fr_1fr] lg:px-10">
                     <div className="relative flex gap-8 md:border-r md:border-white/20 md:pr-16">
                         <Link to="/" className="shrink-0">
                             <div className="text-5xl font-black italic leading-none">
-                                its
+                                ShipNex
                             </div>
                             <div className="mt-1 w-fit bg-[#FF6B00] px-2 py-1 text-[10px] font-bold uppercase text-black">
                                 Logistics
@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
 
             <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-[11px] text-[#B0B0B0] md:flex-row md:items-center md:flex-wrap lg:px-10">
-                <span>© 2026 ITS Logistics</span>
+                <span>© 2026 ShipNex</span>
 
                 <Link to="/privacy-policy" className="hover:text-[#FF6B00]">
                     Privacy Policy
